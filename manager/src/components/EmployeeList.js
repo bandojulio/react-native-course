@@ -31,7 +31,6 @@ class EmployeeList extends Component {
     }
 
     render() {
-        console.log(this.props);
         return (
             <ListView
                 enableEmptySections
@@ -46,7 +45,6 @@ const mapStateToProps = state => {
     const employees = _.map(state.employees, (val, uid) =>{
         return { ...val, uid };
     });
-
     return { employees };
 };
 
